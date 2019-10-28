@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+    <script src="https://kit.fontawesome.com/31ec4e93ae.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="burger">
+                <span class="burger__span"></span>
+        </div>
+        <h1 class="header__h1">CodeJam-Piskel</h1>
+    </header>
+    <main class="main">
+        <div class="main-left-side-block">
+            <div class="tool-bar">
+                <div class="tool-bar__elem"><i class="fas fa-fill-drip"></i><span class="tool-bar__name">Paint bucket (A)</span></div>
+                <div class="tool-bar__elem"><i class="fas fa-eye-dropper"></i><span class="tool-bar__name">Choose color (S)</span></div>
+                <div class="tool-bar__elem"><i class="fas fa-arrows-alt"></i><span class="tool-bar__name">Move (D)</span></div>
+                <div class="tool-bar__elem"><i class="fas fa-crop-alt"></i><span class="tool-bar__name">Transform (F)</span></div>
+            </div>
+            <div class="tool-bar">
+                    <div class="tool-bar__elem"><span class="color color_cur"></span> <span class="color-name">Current color</span></div>
+                    <div class="tool-bar__elem"><span class="color color_prev"></span> <span class="color-name">Prev color</span></div>
+                    <div class="tool-bar__elem"><span class="color color_red"></span> <span class="color-name">red</span></div>
+                    <div class="tool-bar__elem"><span class="color color_blue"></span> <span class="color-name">blue</span></div>
+            </div>
+        </div>
+        <div class="main-center-side-block">
+            <canvas class="canvas-block" id = "canvas"></canvas>
+        </div>
+        <div class="main-right-side-block">
+                <div class="tool-bar">
+                        <div class="tool-bar__elem" id="four-x"><i class="fas fa-window-maximize"></i> <span class="size" >4x4</span></div>
+                        <div class="tool-bar__elem" id="thirty-x"><i class="fas fa-window-maximize"></i> <span class="size">32x32</span></div>
+                        <div class="tool-bar__elem" id="fivehund-x"><i class="fas fa-window-maximize"></i> <span class="size">512x512</span></div>
+                 </div>
+        </div>             
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
